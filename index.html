@@ -14,8 +14,12 @@
 
     <!-- 引入 jQuery Mobile 库 -->
     <script src="http://apps.bdimg.com/libs/jquerymobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+   <!-- <script src="https://cdn.staticfile.org/echarts/4.3.0/echarts.min.js"></script>-->
     <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/font-awesome.css">
     <script src="js/public.js"></script>
+    <script src="js/raphael-2.1.4.min.js"></script>
+    <script src="js/justgage.js"></script>
 </head>
 
 <body>
@@ -24,7 +28,9 @@
     <img src="images/bg.png" >
     <div class="content">
         <p class="commen">-正常温度</p>
+        <div id="kwen" style="width: 1.7rem;height: 1.7rem"></div>
         <p class="kwen">库温：-15℃</p>
+        <div id="hwen" style="width: 1.7rem;height: 1.7rem"></div>
         <p class="hwen">环温：31.3℃</p>
         <p class="time">数据更新时间：13:00</p>
     </div>
@@ -37,29 +43,61 @@
     </li>
     <li>
         <strong>当前库温</strong>
-        <img src="images/icon1.png" alt="">
+        <img src="images/icon2.png" alt="">
         <p>-14.6℃</p>
     </li>
     <li>
         <strong>化霜余时</strong>
-        <img src="images/icon1.png" alt="">
+        <img src="images/icon3.png" alt="">
         <p>0时</p>
     </li>
     <li>
         <strong>远程开机</strong>
-        <img src="images/icon1.png" alt="">
+        <span  class="fa fa-circle-o-notch icon4"></span>
+        <!--<img src="images/icon1.png" alt="">-->
         <p>制冷</p>
     </li>
     <li>
         <strong>设定库温</strong>
-        <img src="images/icon1.png" alt="">
+        <span  class="fa fa-thermometer-three-quarters icon5"></span>
+        <!--<img src="images/icon1.png" alt="">-->
         <p>制冷</p>
     </li>
     <li>
         <strong>定位导航</strong>
-        <img src="images/icon1.png" alt="">
+        <span  class="fa fa-compass icon6"></span>
         <p>制冷</p>
     </li>
+    <div id="main" style="width: 600px;height:400px;"></div>
 </ul>
+
+    <script type="text/javascript">
+    // 基于准备好的dom，初始化echarts实例
+   // var myChart = echarts.init(document.getElementById('kwen'));
+    document.addEventListener("DOMContentLoaded", function(event) {
+        var kwen = new JustGage({
+            id: "kwen",
+            value: 15,
+            min: 0,
+            max: 100,
+            donut: true,
+            gaugeWidthScale: 0.6,
+            counter: true
+        });
+    })
+    document.addEventListener("DOMContentLoaded", function(event) {
+        var hwen = new JustGage({
+            id: "hwen",
+            value: 31,
+            min: 0,
+            max: 100,
+            donut: true,
+            gaugeWidthScale: 0.6,
+            counter: true
+        });
+    })
+
+    </script>
+
 </body>
 </html>

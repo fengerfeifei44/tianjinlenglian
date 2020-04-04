@@ -41,6 +41,16 @@ h3{
     left: 3.42rem;
     width: 100%;
 }
+.top .content #kwen{
+    position: absolute;
+    left: 3.5rem;
+    top:0.5rem;
+}
+#hwen{
+    position: absolute;
+    left: 5rem;
+    top:1.2rem;
+}
 .top .content p.hwen{
     position: absolute;
     top:2.7rem;
@@ -76,6 +86,19 @@ h3{
     text-align: center;
     border-bottom: 1px solid #ccc;
     border-left: 1px solid #ccc;
+}
+.list li span{
+    margin: 0.2rem 0;
+    font-size: 0.52rem;
+}
+.list li span.icon4{
+    color: #2a7b1f;
+}
+.list li span.icon5{
+    color: #7c7c7c;
+}
+.list li span.icon6{
+    color: #8fd1ed;
 }
 .list li:nth-child(3n+1){
     border-left: none;
