@@ -1,118 +1,141 @@
 body{
     margin: 0;
+
 }
-ul,li{
+#homePage ul,li{
     padding: 0;
     margin: 0;
     list-style: none;
 }
-p{
+#homePage p{
     margin: 0;
 }
-h3{
+#homePage h3{
     margin: 0;
     text-align: center;
-    font-size: 0.34rem;
-    padding: 0.2rem 0;
+    font-size: 16px;
+    padding: 10px 0;
 }
-.top{
+#homePage .top{
     position: relative;
     width: 100%;
-    height: 5.47rem;
+    height: 270px;
     overflow: hidden;
 }
-.top .content{
+#homePage .top .content{
 
     z-index: 1;
 
 }
-.top .content p{
-    font-size: 0.32rem;
+#homePage .top .content p{
+    font-size: 16px;
 }
-.top .content p.commen{
+#homePage .top .content p.commen{
     position: absolute;
     color:#2c8111 ;
-   top:0.1rem;
-    left: 0.1rem;
+   top:5px;
+    left: 5px;
 }
-.top .content p.kwen{
+#homePage .top .content p.kwen{
     position: absolute;
-    top:1.82rem;
-    left: 3.42rem;
+    top:91px;
+    left: 171px;
     width: 100%;
+    color: #000;
 }
-.top .content #kwen{
+#homePage .top .content #kwen{
     position: absolute;
-    left: 3.5rem;
-    top:0.5rem;
+    left: 175px;
+    top:25px;
 }
 #hwen{
     position: absolute;
-    left: 5rem;
-    top:1.2rem;
+    left: 5px;
+    top:1.2px;
 }
-.top .content p.hwen{
+#homePage .top .content p.hwen{
     position: absolute;
-    top:2.7rem;
-    left: 4.8rem;
+    top:135px;
+    left: 240px;
     color: #000;
 
     width: 100%;
 }
-.top .content p.time{
+#homePage .top .content p.time{
     position: absolute;
-    bottom: 0.1rem;
-    right: 0.1rem;
+    bottom: 5px;
+    right: 5px;
     width: 100%;
     text-align: right;
-    padding-right: 0.1rem;
+    padding-right:5px;
+    color: #000;
 }
-.top img{
+#homePage .top img{
     position: absolute;
     top:0;
     left: 0;
     width: 100%;
     z-index: 0;
 }
-.list{
-    margin-top: 0.3rem;
+#homePage .list{
+
     border-top: 1px solid #ccc;
+    background: #000;
 
 }
-.list li{
-    padding: 0.4rem 0;
+#homePage .list li{
+    padding: 20px 0;
     box-sizing: border-box;
-    font-size: 0.3rem;
+    font-size: 15px;
     text-align: center;
     border-bottom: 1px solid #ccc;
     border-left: 1px solid #ccc;
 }
-.list li span{
-    margin: 0.2rem 0;
-    font-size: 0.52rem;
+#homePage .list li p span{
+    font-size: 15px;
 }
-.list li span.icon4{
+#homePage .list li span{
+    margin: 10px 0;
+    font-size:27px;
+}
+#homePage .list li span.icon1{
+    color: #93c8fe;
+}
+#homePage .list li span.icon13{
+    color: #f6eab1;
+}
+#homePage .list li span.icon15{
+    color: #f6382a;
+}
+
+#homePage .list li span.icon2{
     color: #2a7b1f;
 }
-.list li span.icon5{
+#homePage .list li span.icon3{
+    color: #f73f3f;
+}
+#homePage .list li span.icon4{
+    color: #2a7b1f;
+}
+#homePage .list li span.icon5{
     color: #7c7c7c;
 }
-.list li span.icon6{
+#homePage .list li span.icon6{
     color: #8fd1ed;
 }
-.list li:nth-child(3n+1){
+#homePage .list li:nth-child(3n+1){
     border-left: none;
 }
-.list li img{
-    margin: 0.2rem 0;
-    width: 0.48rem;
+#homePage .list li img{
+    margin: 10px 0;
+    width: 24px;
 }
-.list{
+#homePage .list{
     display: flex;
     flex-wrap: wrap;
 
 }
-.list li{
+#homePage .list li{
     display: flex;
     flex-direction: column;
     text-align: center;
